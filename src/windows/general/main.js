@@ -1,8 +1,8 @@
-import './stylesheets/main.css';
+import '../../styles/main.css';
 
 // Small helpers you might want to keep
-import './helpers/context_menu.js';
-import './helpers/external_links.js';
+import '../../helpers/context_menu.js';
+import '../../helpers/external_links.js';
 
 // ----------------------------------------------------------------------------
 // Everything below is just to show you how it works. You can delete all of it.
@@ -10,7 +10,7 @@ import './helpers/external_links.js';
 
 import { remote } from 'electron';
 import jetpack from 'fs-jetpack';
-import { greet } from './hello_world/hello_world';
+import { greet } from '../../servises/hello_world';
 import env from 'env';
 
 const app = remote.app;
