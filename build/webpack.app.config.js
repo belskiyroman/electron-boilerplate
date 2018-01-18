@@ -6,11 +6,11 @@ module.exports = env => {
   return merge(base(env), {
     entry: {
       main: './src/main.js',
-      app: './src/renderer/windows/main/main.js'
+      mainWindow: './src/renderer/windows/mainWindow/index.jsx'
     },
     output: {
       filename: '[name].js',
-      path: path.resolve(__dirname, '../app')
+      path: path.resolve(__dirname, '../dist')
     }
   });
 };

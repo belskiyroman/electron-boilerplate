@@ -26,9 +26,21 @@ const osMap = {
   linux: 'Linux'
 };
 
-document.querySelector('#app').style.display = 'block';
-document.querySelector('#greet').innerHTML = greet();
-document.querySelector('#os').innerHTML = osMap[process.platform];
-document.querySelector('#author').innerHTML = manifest.author;
-document.querySelector('#env').innerHTML = env.name;
-document.querySelector('#electron-version').innerHTML = process.versions.electron;
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {App} from './App.jsx';
+
+const params = {
+  app: 'block',
+  greet: greet(),
+  os: osMap[process.platform],
+  author: manifest.author,
+  env: env.name,
+  electronVersion: process.versions.electron,
+};
+
+const root = document.createElement('div');
+root.setAttribute('id', 'root');
+document.body.appendChild(root);
+
+ReactDOM.render(<App {...params}/>, root);
