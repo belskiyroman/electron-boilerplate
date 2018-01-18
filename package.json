@@ -4,10 +4,10 @@
   "description": "Starter for your Electron application",
   "version": "0.0.0",
   "private": true,
-  "author": "Mr. Gumby <mr.gumby@example.com>",
-  "copyright": "© 2017, Gumby inc.",
+  "author": "",
+  "copyright": "",
   "homepage": "http://example.com",
-  "main": "app/background.js",
+  "main": "app/main.js",
   "build": {
     "appId": "com.example.electron-boilerplate",
     "files": [
